@@ -1,38 +1,38 @@
+<!-- This is my first comment for this file - by Laureen Petrocchi - LP -->
 <!doctype html>
-
-<!-- this is my first comment -->
-
 <html lang="en">
   <head>
     <title>Yahoo: Fin: First</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   </head>
+  <!-- Please see my notes about the <head> element in the index.html file. - LP -->
   <body>
       <h1>
           Yahoo Portfolio
       </h1>
       <p>Yahoo Stock</p>
+      <!-- The two expressions above seem to be rather redundant.  Perhaps saying Yahoo Stock Portfolio would be preferable. - LP -->
       <ol>
-          <li>  STX </li>
-  <li>NLNK</li>
- <li>INTC</li>
- <li>TECH</li>
- <li>GOOGL</li>
- <li>AAPL</li>
- <li>LTC-USD</li>
- <li>BCH-USD</li>
- <li>XRP-USD</li>
- <li>ETH-USD</li>
- <li>BTC-USD</li>
- <li>MSFT</li>
+         <li>STX</li>
+         <li>NLNK</li>
+         <li>INTC</li>
+         <li>TECH</li>
+         <li>GOOGL</li>
+         <li>AAPL</li>
+         <li>LTC-USD</li>
+         <li>BCH-USD</li>
+         <li>XRP-USD</li>
+         <li>ETH-USD</li>
+         <li>BTC-USD</li>
+         <li>MSFT</li>
       </ol>
      <div class="cols" style="padding-left: 50px">
       <table class="table" style="background-color: pink">
+          <!-- Better: style = "background-color: white;". - LP -->
           <thead>
                <tr>
                   <th>Symbol</th>
@@ -42,13 +42,19 @@
                   <th>Volume</th>
                   <th>52 Week Low</th>
                   <th>52 Week High</th>
-                   <th>Day Chart</th>
+                  <th>Day Chart</th>
                   <th>Market Cap</th>
               </tr>
-              </thead>
+          </thead>
               <tbody>
                   <tr>
                       <th><a href="https://finance.yahoo.com/quote/STX?p=STX" target="_blank">STX</th></a>
+                      <!-- Although the anchor/link above and all the others work,
+                      I think that the proper form is to nest the anchor <a> element within the other element, 
+                      in this case the table header cell <th> element - or vice versa - rather than to basically intertwine them.  
+                      So, in nesting, whichever element is opened first is closed last, 
+                      whichever element is opened last is closed first, etc. - basically making the order 
+                      of opening and closing tags symmetrical - as with the image <img> elements, etc. below. - LP -->
                       <td>59.87</td>
                       <td style="color: red">-2.21</td>
                       <td style="color: red">-3.56%</td>
@@ -58,7 +64,7 @@
                       <td><img src="image/yahoo3rd.png"></img></td>
                       <td>17.06B</td>
                   </tr>
-                <tr>
+                  <tr>
                       <th><a href="https://finance.yahoo.com/quote/NLNK?p=NLNK" target="_blank">NLNK</th></a>
                       <td>4.5</td>
                       <td style="color: red">-0.03</td>
@@ -79,7 +85,8 @@
                       <td><img src="image/yahoo8th.png"></img></td>
                       <td><img src="image/yahoo9th.png"></img></td>
                       <td>244.30B</td>
-                  </tr><tr>
+                  </tr>
+                  <tr>
                       <th><a href="https://finance.yahoo.com/quote/TECH?p=TECH" target="_blank">TECH</th></a>
                       <td>149.18</td>
                       <td style="color: red">-1.16</td>
@@ -180,14 +187,17 @@
                   </tr>
               </tbody>
       </table>
+      <!-- What is labeled as 52 Week Low appears to be the Yahoo Finance pages' Day Range, and 
+      what is labeled as 52 Week High appears to be the 52-Wk Range.  
+      The table overall, especially the detail of the small images within it, look good.  You go, girl! - LP -->
 </div> 
-      
+<!-- Again, the overall composition, including the empty space, could be balanced better by aligning elements in the center or, 
+perhaps, spreading different ones closer to the left, right, top, bottom. - LP -->    
 </body>    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Please see my note about <script> elements near the bottom of the index.html file. - LP -->
 </html>
-
-
